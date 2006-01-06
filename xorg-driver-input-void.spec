@@ -1,12 +1,12 @@
 Summary:	X.org null input driver
 Summary(pl):	Pusty sterownik wej¶ciowy X.org
 Name:		xorg-driver-input-void
-Version:	1.0.0.3
+Version:	1.0.0.5
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/driver/xf86-input-void-%{version}.tar.bz2
-# Source0-md5:	2315010baa82cf014edae574b6252273
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/driver/xf86-input-void-%{version}.tar.bz2
+# Source0-md5:	bfa5e6c582638837efd6b4fc7d77d35b
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -60,6 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog
+%doc COPYING ChangeLog
 %attr(755,root,root) %{_libdir}/xorg/modules/input/void_drv.so
 %{_mandir}/man4/void.4*
