@@ -1,5 +1,5 @@
 Summary:	X.org null input driver
-Summary(pl):	Pusty sterownik wej¶ciowy X.org
+Summary(pl.UTF-8):   Pusty sterownik wejÅ›ciowy X.org
 Name:		xorg-driver-input-void
 Version:	1.1.0
 Release:	0.1
@@ -26,13 +26,13 @@ pointer and keyboard device, and may be used as X server's core
 pointer and/or core keyboard. It's purpose is to allow the X server to
 operate without a core pointer and/or core keyboard.
 
-%description -l pl
-Pusty sterownik wej¶ciowy X.org. Nie ³±czy siê z ¿adnym urz±dzeniem
-fizycznym i nie dostarcza ¿adnych zdarzeñ. Dzia³a zarówno jako
-urz±dzenie wskazuj±ce jak i klawiatura; mo¿e byæ u¿ywany jako g³ówne
-urz±dzenie wskazuj±ce i/lub g³ówna klawiatura serwera X. Jego celem
-jest umo¿liwienie dzia³ania serwera X bez g³ównego urz±dzenia
-wskazujacego i/lub g³ównej klawiatury.
+%description -l pl.UTF-8
+Pusty sterownik wejÅ›ciowy X.org. Nie Å‚Ä…czy siÄ™ z Å¼adnym urzÄ…dzeniem
+fizycznym i nie dostarcza Å¼adnych zdarzeÅ„. DziaÅ‚a zarÃ³wno jako
+urzÄ…dzenie wskazujÄ…ce jak i klawiatura; moÅ¼e byÄ‡ uÅ¼ywany jako gÅ‚Ã³wne
+urzÄ…dzenie wskazujÄ…ce i/lub gÅ‚Ã³wna klawiatura serwera X. Jego celem
+jest umoÅ¼liwienie dziaÅ‚ania serwera X bez gÅ‚Ã³wnego urzÄ…dzenia
+wskazujacego i/lub gÅ‚Ã³wnej klawiatury.
 
 %prep
 %setup -q -n xf86-input-void-%{version}
