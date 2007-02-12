@@ -1,5 +1,5 @@
 Summary:	X.org null input driver
-Summary(pl.UTF-8):   Pusty sterownik wejściowy X.org
+Summary(pl.UTF-8):	Pusty sterownik wejściowy X.org
 Name:		xorg-driver-input-void
 Version:	1.1.0
 Release:	0.1
