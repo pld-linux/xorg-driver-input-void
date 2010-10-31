@@ -1,19 +1,19 @@
 Summary:	X.org null input driver
 Summary(pl.UTF-8):	Pusty sterownik wejściowy X.org
 Name:		xorg-driver-input-void
-Version:	1.3.0
-Release:	4
+Version:	1.3.1
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-input-void-%{version}.tar.bz2
-# Source0-md5:	53bdac9ca56418f4675810ed8a78b3e8
+# Source0-md5:	3056bc7c57db8c5d56039648c0530c45
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-proto-xproto-devel
-BuildRequires:	xorg-util-util-macros >= 1.3
+BuildRequires:	xorg-util-util-macros >= 1.8
 BuildRequires:	xorg-xserver-server-devel >= 1.0.99.901
 BuildRequires:	rpmbuild(macros) >= 1.389
 %{?requires_xorg_xserver_xinput}
@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -f $RPM_BUILD_ROOT%{_libdir}/xorg/modules/*/*.la
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/xorg/modules/*/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
